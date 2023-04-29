@@ -92,12 +92,12 @@ hr {
   margin: 20px;
   cursor: pointer;
   opacity: 0.4;
-  border: 2px solid #883576;
+  border: 2px solid green;
   box-shadow: 0 4px 8px 0 #FFD600, 0 6px 20px 0 #FEF5AC;
 }
 
-.language__img:hover,
-.language__img_active {
+.language__img_active,
+.language__img:hover {
   opacity: 1;
 }
 
@@ -404,13 +404,4 @@ nav {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.language__img {
-  width: 30px;
-  margin: 10px;
-  cursor: pointer;
-  opacity: 0.4;
-  border: 2px solid #883576;
-  box-shadow: 0 4px 8px 0 #FFD600, 0 6px 20px 0 #FEF5AC;
 }/*# sourceMappingURL=globals.css.map */
