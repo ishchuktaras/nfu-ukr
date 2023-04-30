@@ -19,10 +19,9 @@ html {
 body {
   min-height: 100%;
   max-width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   top: 40px;
-
 }
 
 .neural_connections {
@@ -89,12 +88,13 @@ hr {
   cursor: pointer;
   opacity: 0.6;
   border: 2px solid green;
-  box-shadow: 0 4px 8px 0 #FFD600, 0 6px 20px 0 #FEF5AC;
-}
+  box-shadow: 0 4px 8px 0 #ffd600, 0 6px 20px 0 #fef5ac;
 
-.language__img:active,
-.language__img:hover {
-  opacity: 1;
+  &:active,
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .right {
@@ -168,16 +168,14 @@ address a:hover {
 
 // Cookies
 
-div.cookiebanner>a {
+div.cookiebanner > a {
   background: $backgroundColor2;
   border: 1px solid #1d093f;
 }
 
-
 // Media queries
 
 @media screen and (max-width: 1440px) {
-
   .language__img {
     width: 28px;
   }
@@ -186,11 +184,6 @@ div.cookiebanner>a {
   .language__img_active {
     opacity: 1;
   }
-
-
-
-
-
 
   .popup-card {
     position: relative;
@@ -209,7 +202,6 @@ div.cookiebanner>a {
     right: 111px;
   }
 
-
   .about h3 {
     line-height: 18px;
     padding: 22px 0;
@@ -221,7 +213,6 @@ div.cookiebanner>a {
 }
 
 @media screen and (max-width: 1024px) {
-
   .language__img {
     width: 28px;
   }
@@ -239,7 +230,6 @@ div.cookiebanner>a {
 }
 
 @media screen and (max-width: 768px) {
-
   nav {
     position: fixed;
     z-index: 3;
@@ -256,14 +246,11 @@ div.cookiebanner>a {
     transition: all 0.7s ease;
   }
 
-
   li.fade {
     opacity: 1;
   }
 
   // translator
-
-
 
   .topnav {
     overflow: hidden;
@@ -305,7 +292,6 @@ div.cookiebanner>a {
 
   .nav_menu a {
     font-size: 16px;
-
   }
 
   .translator {
@@ -315,7 +301,6 @@ div.cookiebanner>a {
 }
 
 @media screen and (max-width: 425px) {
-
   .sidenav {
     padding-top: 15px;
   }
@@ -347,7 +332,7 @@ div.cookiebanner>a {
   }
 
   canvas {
-    top: -20px;
+    top: 100px;
     left: 12px;
   }
 
@@ -435,7 +420,6 @@ nav {
 .nav-links li a:hover::before {
   width: 80%;
 }
-
 
 /*Styling Hamburger Icon*/
 .hamburger div {

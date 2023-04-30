@@ -93,11 +93,9 @@ hr {
   cursor: pointer;
   opacity: 0.6;
   border: 2px solid green;
-  box-shadow: 0 4px 8px 0 #FFD600, 0 6px 20px 0 #FEF5AC;
+  box-shadow: 0 4px 8px 0 #ffd600, 0 6px 20px 0 #fef5ac;
 }
-
-.language__img:active,
-.language__img:hover {
+.language__img:active, .language__img:hover, .language__img:focus {
   opacity: 1;
 }
 
@@ -298,7 +296,7 @@ div.cookiebanner > a {
     text-align: left;
   }
   canvas {
-    top: -20px;
+    top: 100px;
     left: 12px;
   }
   .nav_menu a {

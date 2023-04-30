@@ -290,7 +290,7 @@
     text-align: left;
   }
   .hamburger {
-    display: none;
+    display: block;
   }
   .hamburger div {
     width: 30px;
