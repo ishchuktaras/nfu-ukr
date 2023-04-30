@@ -103,6 +103,12 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 15px auto;
+  transition: all 0.5s ease-out;
+}
+.popup_card .info .add_cart_btn:hover,
+.popup_card .info .add_cart_btn:focus {
+  background-color: #25316D;
+  color: #FFD600;
 }
 .popup_card .close_btn {
   color: #FFD600;
