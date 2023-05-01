@@ -1,4 +1,5 @@
 import '../styles/globals.scss'
+import '../components/Navbar/navbar.css'
 import type { AppProps } from 'next/app'
 import { MoralisProvider } from 'react-moralis'
 import { NotificationProvider } from 'web3uikit'
