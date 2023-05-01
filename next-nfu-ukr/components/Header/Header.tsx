@@ -12,33 +12,14 @@ import HeaderStyle from "./Header.module.scss";
 
 const Header = (): JSX.Element => {
   const { t } = useTranslation("common");
-  const mobileMenu = () => {
-    const hamburger: any = document.querySelector(".hamburger");
-    const navLinks: any = document.querySelector(".nav-links");
-    const links: any = document.querySelectorAll(".nav-links li");
-    hamburger.addEventListener("click", () => {
-  //Animate Links
-  navLinks.classList.toggle("open");
-  links.forEach((link) => {
-    link.classList.toggle("fade");
-  });
-
-  //Hamburger Animation
-  hamburger.classList.toggle("toggle");
-});
-};
-
+  
     return (
       <div className={HeaderStyle.header} id="home">
         <nav>
           <div className={HeaderStyle.logo}>
             <img src="logo/NFU_yellow.svg" alt="Logo Image" />
           </div>
-          <div className={HeaderStyle.hamburger}>
-            <div className={HeaderStyle.line1}></div>
-            <div className={HeaderStyle.line2}></div>
-            <div className={HeaderStyle.line3}></div>
-          </div>
+          
           <ul className={HeaderStyle.nav_links}>
             <li>
               <a href="#home">{t("main")}</a>
