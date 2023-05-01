@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
 @import url("https://fonts.googleapis.com/css?family=Roboto:500");
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -10,11 +9,20 @@
   padding: 2rem 6rem;
 }
 
-.navbar-links {
+.navbar_links {
   flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.navbar_links_logo {
+  margin-right: 2rem;
+}
+
+.navbar_links_logo img {
+  width: 62.56px;
+  height: 16.02px;
 }
 
 .navbar-links_container {
@@ -22,9 +30,8 @@
   flex-direction: row;
 }
 
-.navbar-links_container p,
-.navbar-sign p,
-.navbar-menu_container p {
+.navbar_links_container p,
+.navbar_menu_container p {
   color: #fff;
   font-family: var(--font-family);
   font-weight: 500;
@@ -35,8 +42,7 @@
   cursor: pointer;
 }
 
-.navbar-sign button,
-.navbar-menu_container button {
+.navbar_menu_container button {
   padding: 1rem 2rem;
   color: #fff;
   left: 1153px;
@@ -52,17 +58,17 @@
   cursor: pointer;
 }
 
-.navbar-menu {
+.navbar_menu {
   margin-left: 1rem;
   display: none;
   position: relative;
 }
 
-.navbar-menu svg {
+.navbar_menu svg {
   cursor: pointer;
 }
 
-.navbar-menu_container {
+.navbar_menu_container {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -79,19 +85,15 @@
   box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
-.navbar-menu_container p {
+.navbar_menu_container p {
   margin: 1rem 0;
 }
 
-.navbar-menu_container-links-sign {
-  display: none;
-}
-
 @media screen and (max-width: 1050px) {
-  .navbar-links_container {
+  .navbar_links_container {
     display: none;
   }
-  .navbar-menu {
+  .navbar_menu {
     display: flex;
   }
 }
@@ -104,13 +106,7 @@
   .navbar {
     padding: 2rem;
   }
-  .navbar-sign {
-    display: none;
-  }
-  .navbar-menu_container {
+  .navbar_menu_container {
     top: 20px;
-  }
-  .navbar-menu_container-links-sign {
-    display: block;
   }
 }/*# sourceMappingURL=navbar.css.map */
