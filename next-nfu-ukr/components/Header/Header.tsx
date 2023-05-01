@@ -13,6 +13,7 @@ import HeaderStyle from "./Header.module.scss";
 const Header = (): JSX.Element => {
   const { t } = useTranslation("common");
   
+  
     return (
       <div className={HeaderStyle.header} id="home">
         <div>
