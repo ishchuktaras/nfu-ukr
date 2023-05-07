@@ -32,8 +32,8 @@ const Footer = () => {
             className={FooterStyle.icon_img} alt="instagram-logo" /></a>
           <a href="https://www.facebook.com/" title="Facebook" target="_blank"><img src="icons/facebook_logo.png"
             className={FooterStyle.icon_img} alt="facebook-logo" /></a>
-          <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank"><img src="icons/linkedin_logo.png"
-            className={FooterStyle.icon_img} alt="linkedin-logo" /></a>
+          <a href="https://www.youtube.com/" title="YouTube" target="_blank"><img src="icons/youtube.png"
+            className={FooterStyle.icon_img} alt="youtube-logo" /></a>
           <a href="https://twitter.com/" title="Twitter" target="_blank"><img src="icons/twitter_logo.png"
             className={FooterStyle.icon_img} alt="twitter-logo" /></a>
         </div>
