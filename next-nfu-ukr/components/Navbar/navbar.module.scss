@@ -75,8 +75,8 @@
 
 .nav_language {
     z-index: 3;
-    justify-content: last;
-    align-items: center;
+    justify-content:last baseline;
+    align-items:last baseline;
 }
 
 @media screen and (max-width: 1050px) {

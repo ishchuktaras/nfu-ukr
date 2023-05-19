@@ -3,6 +3,7 @@ import useTranslation from "next-translate/useTranslation";
 import setLanguage from "next-translate/setLanguage";
 import { ConnectButton } from "web3uikit";
 
+
 import HeaderStyle from "./Header.module.scss";
 
 // This function's behavior needs to be applied

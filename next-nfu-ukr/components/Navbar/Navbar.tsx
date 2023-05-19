@@ -1,10 +1,10 @@
 import React, { Fragment, useState } from "react";
 import logo from "../../public/logo/NFU.svg";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import useTranslation from "next-translate/useTranslation";
 import setLanguage from "next-translate/setLanguage";
 import { ConnectButton } from "web3uikit";
 import NavbarStyle from "./navbar.module.scss";
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -51,45 +51,6 @@ const Navbar = () => {
             <ConnectButton moralisAuth={false} />
           </p>
         </div>
-      </div>
-      <div className={NavbarStyle.navbar_menu}>
-        {toggleMenu ? (
-          <RiCloseLine
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(false)}
-          />
-        ) : (
-          <RiMenu3Line
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(true)}
-          />
-        )}
-        {toggleMenu && (
-          <div className={NavbarStyle.navbar_menu_container}>
-            <div className={NavbarStyle.navbar_menu_container_links}>
-              <p>
-                <a href="#home">{t("main")}</a>
-              </p>
-              <p>
-                <a href="#gallery">{t("gallery")}</a>
-              </p>
-              <p>
-                <a href="#about">{t("aboutProject")}</a>
-              </p>
-              <p>
-                <a href="#team">{t("ourTeam")}</a>
-              </p>
-              <p>
-                <a href="#contacts">{t("contacts")}</a>
-              </p>
-              <p>
-                <ConnectButton moralisAuth={false} />
-              </p>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
