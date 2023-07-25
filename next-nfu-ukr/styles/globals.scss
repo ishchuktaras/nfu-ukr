@@ -75,18 +75,12 @@ hr {
   width: 70%;
 }
 
-.language {
-  z-index: 3;
-  position: absolute;
-  bottom: 10%;
-  left: 45%;
-}
 
 .language__img {
   width: 35px;
-  margin: 20px;
+  margin: 20px auto;
   cursor: pointer;
-  opacity: .4;
+  opacity: .7;
   border: 2px solid #883576;
   box-shadow: 0 4px 8px 0 #FFD600, 0 6px 20px 0 #FEF5AC;
 }
@@ -186,11 +180,6 @@ div.cookiebanner>a {
     opacity: 1;
   }
 
-
-
-
-
-
   .popup-card {
     position: relative;
     display: flex;
@@ -278,12 +267,9 @@ div.cookiebanner>a {
     display: none;
   }
 
-  .language {
-    left: 40%;
-  }
-
   .language__img {
-    width: 28px;
+    display: block;
+    width: 30px;
   }
 
   .language__img:hover,

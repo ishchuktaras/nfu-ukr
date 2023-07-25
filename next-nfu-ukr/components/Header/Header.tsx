@@ -7,24 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import HeaderStyle from "./Header.module.scss";
 
-// This function's behavior needs to be applied
-// const mobileMenu = () =>{
-//   const hamburger: any = document.querySelector(".hamburger");
-//   const navLinks: any = document.querySelector(".nav-links");
-//   const links: any = document.querySelectorAll(".nav-links li");
-
-//   hamburger.addEventListener('click', ()=>{
-//      //Animate Links
-//       navLinks.classList.toggle("open");
-//       links.forEach(link => {
-//           link.classList.toggle("fade");
-//       });
-
-//       //Hamburger Animation
-//       hamburger.classList.toggle("toggle");
-//   });
-// }
-
 const Header = (): JSX.Element => {
   const { t } = useTranslation('common');
   const [isNavagitaionMenuActive, setIsNavagitaionMenuActive] = useState<boolean>(false);
