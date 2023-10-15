@@ -7,24 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import HeaderStyle from "./Header.module.scss";
 
-// This function's behavior needs to be applied
-// const mobileMenu = () =>{
-//   const hamburger: any = document.querySelector(".hamburger");
-//   const navLinks: any = document.querySelector(".nav-links");
-//   const links: any = document.querySelectorAll(".nav-links li");
-
-//   hamburger.addEventListener('click', ()=>{
-//      //Animate Links
-//       navLinks.classList.toggle("open");
-//       links.forEach(link => {
-//           link.classList.toggle("fade");
-//       });
-
-//       //Hamburger Animation
-//       hamburger.classList.toggle("toggle");
-//   });
-// }
-
 const Header = (): JSX.Element => {
   const { t } = useTranslation('common');
   const [isNavagitaionMenuActive, setIsNavagitaionMenuActive] = useState<boolean>(false);
@@ -43,15 +25,19 @@ const Header = (): JSX.Element => {
           <a href="#team">{t("ourTeam")}</a>
           <a href="#contacts">{t("contacts")}</a>
         </div>
-        <ConnectButton moralisAuth={false} />
-        <div onClick={() => setIsNavagitaionMenuActive(!isNavagitaionMenuActive)} className={HeaderStyle.mobile_menu_btn}>
-          {isNavagitaionMenuActive ? <FontAwesomeIcon icon={faTimes} size="2x" color={"#FFD600"} />
-            : <FontAwesomeIcon icon={faBars} size="3x" color={"#FFD600"} />}
+        <div className={HeaderStyle.connection_button_container}>
+          <ConnectButton moralisAuth={false} />
         </div>
+        <div className={HeaderStyle.menu_container}>
+          <div onClick={() => setIsNavagitaionMenuActive(!isNavagitaionMenuActive)} className={HeaderStyle.mobile_menu_btn}>
+            {isNavagitaionMenuActive ? <FontAwesomeIcon icon={faTimes} size="2x" color={"#FFD600"} />
+              : <FontAwesomeIcon icon={faBars} size="3x" color={"#FFD600"} />}
+          </div>
 
-        <div className={HeaderStyle.nav_language}>
-          <img src="language/Flag_of_Ukraine.svg" alt="uk" data-google-lang="uk" className="language__img" onClick={() => setLanguage('ua')} />
-          <img src="language/Flag_of_the_United_Kingdom.svg" alt="en" data-google-lang="en" className="language__img" onClick={() => setLanguage('en')} />
+          <div className={HeaderStyle.nav_language}>
+            <img src="language/Flag_of_Ukraine.svg" alt="uk" data-google-lang="uk" className="language__img" onClick={() => setLanguage('ua')} />
+            <img src="language/Flag_of_the_United_Kingdom.svg" alt="en" data-google-lang="en" className="language__img" onClick={() => setLanguage('en')} />
+          </div>
         </div>
       </div>
       <div className={HeaderStyle.emblem_container}>

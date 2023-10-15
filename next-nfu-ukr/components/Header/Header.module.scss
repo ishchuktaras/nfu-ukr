@@ -17,6 +17,12 @@
     top: 0;
     background: #00005b;
 
+    .connection_button_container {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+    }
+
     .logo {
       padding: 1vh 2vw;
       text-align: center;
@@ -121,10 +127,13 @@
 @media screen and (max-width: 1024px) {
   .header {
     .header_container {
-      .nav_language {
-        right: 70px;
+      .menu_container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 20px;
+        justify-content: flex-start;
       }
-
+      
       .nav_links {
         flex-direction: column;
         justify-content: center;
@@ -145,18 +154,14 @@
       }
 
       .mobile_menu_btn {
-        display: block;
-        position: absolute;
-        right: 10px;
+        display: flex;
+        align-items: center;
         z-index: 10;
       }
 
     }
 
-    .nav_language {
-      position: relative;
-      right: 40px;
-    }
+  
   }
 
 }
